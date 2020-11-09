@@ -214,7 +214,7 @@ public:
 		_size += len;
 	}
 
-	// ¡®[]¡¯ÖØÔØ
+	// ¡®[]¡¯ÔËËã·ûÖØÔØ
 	char& operator[](size_t pos) const
 	{
 		assert(pos < _size);
