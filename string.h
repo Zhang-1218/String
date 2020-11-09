@@ -49,12 +49,6 @@ public:
 		return *this;
 	}
 
-	// [] 重载
-	char & operator[](size_t i)
-	{
-		return _str[i];
-	}
-
 	// 增容函数
 	void reserve(size_t n)
 	{
@@ -220,7 +214,7 @@ public:
 		_size += len;
 	}
 
-	// 返回C风格字符串
+	// ‘[]’重载
 	char& operator[](size_t pos) const
 	{
 		assert(pos < _size);
@@ -347,6 +341,7 @@ public:
 		return false;
 	}
 
+	// 返回C风格字符串
 	const char* c_str()const
 	{
 		return _str;
